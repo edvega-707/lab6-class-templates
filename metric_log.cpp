@@ -109,6 +109,21 @@ int main()
     // TODO (Part E): Add two dummy duration values to that log.
     // TODO (Part E): Use contains with one value that exists and one that does not exist.
     // TODO (Part E): Print descriptive English labels for all results.
+    MetricLog<double> sessionDurations;
 
+    sessionDurations.add(42.5);
+    sessionDurations.add(55.0);
+
+    cout << "First session duration: "
+         << sessionDurations.get(0) << endl;
+
+     cout << boolalpha;
+
+    cout << "Duration exists: "
+         << sessionDurations.contains(42.5) << endl;
+
+     cout << "Other duration exists: "
+          << sessionDurations.contains(60.0) << endl;
+              
     return 0;
 }
