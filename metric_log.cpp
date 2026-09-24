@@ -16,10 +16,10 @@ using namespace std;
  * [Complete in Part E: describe the values managed by this log.]
  *
  * Operations:
- * [Complete in Part E: describe add(value).]
- * [Complete in Part E: describe get(index) and its precondition.]
- * [Complete in Part E: describe contains(target).]
- * [Complete in Part E: describe size() and isEmpty().]
+ * [Complete in Part E: describe add(Value): adds a value to the log if there is available space.
+ * [Complete in Part E: describe get(index): Returns the value at a a valid index.
+ * [Complete in Part E: describe contains(target): returns true if the target value is stored in the log.
+ * [Complete in Part E: describe size() and isEmpty(): for the size it returns the number of the stored values and for the isEmpty(): it Returns true if the log contains no values 
  */
 
 template <typename T>
@@ -124,6 +124,6 @@ int main()
 
      cout << "Other duration exists: "
           << sessionDurations.contains(60.0) << endl;
-              
+
     return 0;
 }
